@@ -11,17 +11,21 @@ import {
 function App() {
   return (
     <>
-      <div>
+      {/* <div className="min-h-screen flex flex-col"> */}
+      <div className="min-h-screen text-2xl justify-center grid place-items-center">
+        {/* flex flex-row min-h-screen justify-center items-center */}
         <DropdownMenu>
-          <DropdownMenuTrigger>Operating System</DropdownMenuTrigger>
+          <DropdownMenuTrigger className="min-w-96">Operating System</DropdownMenuTrigger>
+
           <DropdownMenuContent>
             {/* <DropdownMenuLabel>My Account</DropdownMenuLabel> */}
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>Windows</DropdownMenuItem>
-            <DropdownMenuItem>Mac</DropdownMenuItem>
+            <DropdownMenuSeparator className="w-96" />
+            <DropdownMenuItem className="justify-center text-xl">Windows</DropdownMenuItem>
+            <DropdownMenuItem className="justify-center text-xl">Mac</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
+      {/* </div> */}
     </>
   );
 }
