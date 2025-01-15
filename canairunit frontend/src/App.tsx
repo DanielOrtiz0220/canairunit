@@ -7,18 +7,21 @@ import { GraphicsCardInput } from "./components/GraphicsCardInput";
 
 function App() {
   return (
-    <div className="flex flex-col justify-center items-center text-2xl gap-32">
-      <div>
-        <OperatingSystemDropdown />
+    <div>
+      <div className="flex flex-col justify-center items-center text-2xl gap-32 mx-auto pb-10">
+        <div>
+          <OperatingSystemDropdown />
+        </div>
+        <div>
+          <PCModelDropdown />
+        </div>
       </div>
-
-      <div>
-        <PCModelDropdown />
+      <div className="flex flex-col justify-center items-center text-3xl pb-10">OR</div>
+      <div className="flex flex-col gap-16 justify-center items-center mx-auto w-96">
+        <ProcessorInput />
+        <GraphicsCardInput />
+        <MemoryInput />
       </div>
-
-      <ProcessorInput />
-      <GraphicsCardInput />
-      <MemoryInput />
     </div>
   );
 }
