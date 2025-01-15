@@ -5,7 +5,7 @@ import {
   // DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/shadcnui/dropdown-menu";
+} from "@/ui/dropdown-menu";
 
 export default function PCModelDropdown() {
   return (

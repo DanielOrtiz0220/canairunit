@@ -1,6 +1,9 @@
 import "./App.css";
 import OperatingSystemDropdown from "./components/OperatingSystemDropdown";
 import PCModelDropdown from "./components/PcModel";
+import { ProcessorInput } from "./components/ProcessorInput";
+import { MemoryInput } from "./components/MemoryInput";
+import { GraphicsCardInput } from "./components/GraphicsCardInput";
 
 function App() {
   return (
@@ -12,6 +15,10 @@ function App() {
       <div>
         <PCModelDropdown />
       </div>
+
+      <ProcessorInput />
+      <GraphicsCardInput />
+      <MemoryInput />
     </div>
   );
 }
